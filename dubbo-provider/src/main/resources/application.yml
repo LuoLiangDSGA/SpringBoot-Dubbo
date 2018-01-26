@@ -1,0 +1,13 @@
+spring:
+  dubbo:
+    application:
+      name: springboot-dubbo-provider
+      owner: luoliang
+      organization: qisyun
+    registry:
+      address: zookeeper://192.168.95.100:2181?backup=192.168.95.101:2181,192.168.95.102:2181
+    protocol:
+      name: dubbo
+      port: 20990
+    scan: org.springboot.dubbo.service
+    module: provider

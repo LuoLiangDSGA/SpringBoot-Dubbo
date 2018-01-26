@@ -1,0 +1,12 @@
+spring:
+  dubbo:
+    application:
+      name: springboot-dubbo-consumer
+      owner: luoliang
+      organization: qisyun
+    registry:
+      address: zookeeper://172.31.31.48:2181
+    scan: org.springboot.dubbo.service
+    module: consumer
+    protocol:
+      port: 20990
