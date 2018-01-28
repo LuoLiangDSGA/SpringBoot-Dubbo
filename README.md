@@ -1,2 +1,2 @@
 # SpringBoot-Dubbo
-SpringBoot整合最新
+SpringBoot整合最新Dubbo2.5.9
