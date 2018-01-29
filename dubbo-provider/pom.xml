@@ -6,6 +6,7 @@
         <artifactId>springboot-dubbo</artifactId>
         <groupId>org.springboot.dubbo</groupId>
         <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
