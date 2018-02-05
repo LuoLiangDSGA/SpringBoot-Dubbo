@@ -1,13 +1,28 @@
-spring:
+#dubbo配置
+dubbo:
+  application:
+    id: springboot-dubbo-provider
+    name: springboot-dubbo-provider
+    qos:
+      port: 22222
+      enable: true
+  #协议配置
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12345
+    status: server
+  #服务注册配置
+  registry:
+    id: my-registry
+    address: N/A
+endpoints:
   dubbo:
-    application:
-      name: springboot-dubbo-provider
-      owner: luoliang
-      organization: qisyun
-    registry:
-      address: zookeeper://192.168.95.100:2181?backup=192.168.95.101:2181,192.168.95.102:2181
-    protocol:
-      name: dubbo
-      port: 20990
-    scan: org.springboot.dubbo.service
-    module: provider
+    enabled: true
+#dubbo健康监控
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load,threadpool

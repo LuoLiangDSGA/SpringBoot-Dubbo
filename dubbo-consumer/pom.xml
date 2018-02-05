@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>springboot-dubbo</artifactId>
-        <groupId>org.springboot.dubbo</groupId>
-        <version>${revision}</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springboot.dubbo</groupId>
     <artifactId>dubbo-consumer</artifactId>
-    <version>${revision}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>dubbo-consumer</name>
     <description>Dubbo project for Spring Boot:consumer</description>
+
+    <parent>
+        <artifactId>springboot-dubbo</artifactId>
+        <groupId>org.springboot.dubbo</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
 
     <dependencies>
         <!-- Spring Boot dependencies -->
@@ -27,6 +28,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <dependency>
@@ -50,4 +56,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
