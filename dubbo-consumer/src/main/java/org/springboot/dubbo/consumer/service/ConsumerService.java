@@ -8,6 +8,4 @@ package org.springboot.dubbo.consumer.service;
  **/
 public interface ConsumerService {
     String register(String id);
-
-    String test();
 }
