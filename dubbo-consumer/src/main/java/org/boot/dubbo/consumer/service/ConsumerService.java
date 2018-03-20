@@ -1,4 +1,4 @@
-package org.springboot.dubbo.consumer.service;
+package org.boot.dubbo.consumer.service;
 
 /**
  * Created by IntelliJ IDEA.
@@ -7,5 +7,5 @@ package org.springboot.dubbo.consumer.service;
  * @date 2018/1/8
  **/
 public interface ConsumerService {
-    String register(String id);
+    String sayHello(String name);
 }

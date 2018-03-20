@@ -1,4 +1,4 @@
-package org.springboot.dubbo.provider;
+package org.boot.dubbo.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

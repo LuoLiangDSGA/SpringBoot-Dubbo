@@ -1,4 +1,4 @@
-package org.springboot.dubbo.provider.service;
+package org.boot.dubbo.provider.service;
 
 /**
  * Created by IntelliJ IDEA.
@@ -7,5 +7,5 @@ package org.springboot.dubbo.provider.service;
  * @date 2018/1/8
  **/
 public interface DubboService {
-    String register(String id);
+    String sayHello(String name);
 }
