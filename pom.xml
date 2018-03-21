@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.7.RELEASE</version>
+        <version>1.5.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -28,6 +28,7 @@
         <dubbo-spring-boot-starter.version>0.1.0</dubbo-spring-boot-starter.version>
         <fastjson_version>1.2.31</fastjson_version>
         <dubbo-provider.version>1.0.0-SNAPSHOT</dubbo-provider.version>
+        <zk-client.version>0.2</zk-client.version>
     </properties>
 
     <dependencyManagement>
@@ -47,7 +48,7 @@
             <dependency>
                 <groupId>com.101tec</groupId>
                 <artifactId>zkclient</artifactId>
-                <version>0.2</version>
+                <version>${zk-client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
