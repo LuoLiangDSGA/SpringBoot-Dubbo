@@ -1,4 +1,4 @@
-## SpringBoot整合Dubbo2.5.10，并使用Docker容器化
+## SpringBoot整合Dubbo2.5.10
 ### 开始
 Dubbo已经进入了Apache孵化器，并且发布了官方的spring-boot-starter0.1.0，用于简化dubbo应用的配置，主要包括了autoconfigure(自动装配)，externalized-configuration(外部化配置)，actuator(生产准备)等，可参考官方github  [dubbo-spring-boot-starter](https://github.com/apache/incubator-dubbo-spring-boot-project/releases/tag/0.1.0).
 ### 准备工作
@@ -293,6 +293,6 @@ public class DefaultController {
 现在来测试一下，分别启动provider和consumer，打开浏览器，输入http://localhost:8081/user/sayHello?name=dubbo
 
 可以看到，返回的结果和预期一样，说明项目已经成功集成
-![](https://ws1.sinaimg.cn/large/006tKfTcgy1fpkgcg2ykuj30cm037dg5.jpg)
 
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1fpkgcg2ykuj30cm037dg5.jpg)
 
